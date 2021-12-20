@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ActivityFeedPage } from "./pages/ActivityFeedPage"
 
-import Header from './Header.jsx';
+import { Header, Footer } from './components';
 
 const App = () => {
   return (
     <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
+      <Header />
+      <ActivityFeedPage />
+      <Footer />
     </div>
   );
 };
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
 
 export default App;
